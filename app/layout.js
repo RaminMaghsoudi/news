@@ -1,4 +1,4 @@
-import MainHeader from "@/components/main-header/main-header";
+import MainHeaderpage from "@/components/header/main-header";
 import "./globals.css";
 
 // export const metadata = {
@@ -6,8 +6,8 @@ import "./globals.css";
 //   description: "Delicious meals, shared by a food-loving community",
 // };
 export const metadata = {
-  title: "Meals - Create Next App",
-  description: "Delicious meals, shared by a food-loving community",
+  title: "Next.js Page Routing & Rendering",
+  description: "Learn how to route to different pages.",
   generator: "Next.js",
   applicationName: "Meals",
   referrer: "origin-when-cross-origin",
@@ -26,8 +26,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <MainHeader />
-        {children}
+        <div id="page">
+          <MainHeaderpage />
+          {children}
+        </div>
       </body>
     </html>
   );
