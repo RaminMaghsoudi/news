@@ -1,5 +1,4 @@
-import MainHeaderpage from "@/components/header/main-header";
-import "./globals.css";
+import "../globals.css";
 
 // export const metadata = {
 //   title: "Meals - Create Next App",
@@ -22,15 +21,10 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function MarketingLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <div id="page">
-          <MainHeaderpage />
-          {children}
-        </div>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
