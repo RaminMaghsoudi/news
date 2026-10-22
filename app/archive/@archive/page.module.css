@@ -1,0 +1,40 @@
+.Header {
+  font-family: CL;
+  position: relative;
+  padding-left: 15px;
+  width: fit-content;
+}
+.Header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  height: 70%;
+  width: 3px;
+  background-color: #047509;
+}
+.subHeader {
+  position: relative;
+  margin-left: 15px;
+  top: -25px;
+  color: gray;
+}
+#archive-header ul {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+#archive-header ul a {
+  text-decoration: none;
+  color: #047509;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: 0.5s;
+}
+
+#archive-header ul a:hover,
+#archive-header ul a.active {
+  color: #141400;
+}
