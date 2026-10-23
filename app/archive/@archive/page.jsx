@@ -1,7 +1,7 @@
 import { getAvailableNewsYears } from "@/lib/news";
-import classess from "./page.module.css";
 import Link from "next/link";
-import { Box } from "@mui/material";
+import ArchiveHeader from "@/components/archive/header/archive-header";
+import classess from "./page.module.css";
 
 export default async function ArchivePage({ params }) {
   const { filter } = await params;
@@ -9,13 +9,9 @@ export default async function ArchivePage({ params }) {
   const selectedYear = filter?.[0]; // const selectedYear = filter ? filter[0] : undefined;
 
   return (
-    <header id={classess["archive-header"]}>
-      <Box className={classess.Header}>
-        <h1>News Archive</h1>
-        <span className={classess.subHeader}>Archives filtered by year</span>
-      </Box>
+    <ArchiveHeader>
       <nav>
-        <ul>
+        <ul id={classess.ul}>
           {links.map((link) => {
             const href = selectedYear
               ? `/archive/${selectedYear}/${link}`
@@ -28,6 +24,6 @@ export default async function ArchivePage({ params }) {
           })}
         </ul>
       </nav>
-    </header>
+    </ArchiveHeader>
   );
 }
