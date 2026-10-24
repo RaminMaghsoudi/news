@@ -12,7 +12,7 @@ export default async function NewsDetailpage({ params }) {
   return (
     <article className={classess["news-article"]}>
       <header>
-        <Link href={`/news/${newsItem.slug}/showImage`}>
+        <Link href={`/news/${newsItem.slug}/image`}>
           <Image
             src={`/images/news/${newsItem.image}`}
             alt={newsItem.title}

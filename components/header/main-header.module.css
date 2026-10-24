@@ -11,10 +11,7 @@
   font-size: 1.3rem;
   text-decoration: none;
 }
-#nav {
-  color: black;
-  text-decoration: none;
-  font-family: CB;
-  font-size: 1.3rem;
-  text-decoration: none;
+.UL {
+  display: flex;
+  flex-direction: row;
 }

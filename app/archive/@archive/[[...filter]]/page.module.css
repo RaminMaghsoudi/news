@@ -11,8 +11,10 @@
   font-size: 1.25rem;
   transition: 0.5s;
 }
-
 #ul a:hover,
 #ul a.active {
   color: #047509;
+}
+.newsContent {
+  color: gray;
 }

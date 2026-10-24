@@ -1,5 +1,6 @@
 import Link from "next/link";
 import classess from "./main-header.module.css";
+import NavLink from "../nav-link/nav-link";
 
 export default async function MainHeader() {
   return (
@@ -7,9 +8,20 @@ export default async function MainHeader() {
       <Link href="/" id={classess.logo}>
         NextNews
       </Link>
-      <Link id={classess.nav} href="/news">
-        News
-      </Link>
+      <nav>
+        <ul className={classess.UL}>
+          <NavLink href="/news">News</NavLink>
+          <NavLink href="/archive">Archive</NavLink>
+        </ul>
+      </nav>
+      {/* <div>
+        <Link id={classess.nav} href="/news">
+          News
+        </Link>
+        <Link id={classess.nav} href="/archive">
+          Archive
+        </Link>
+      </div> */}
     </header>
   );
 }

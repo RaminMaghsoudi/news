@@ -1,0 +1,26 @@
+.nav {
+  color: black;
+  text-decoration: none;
+  font-family: CB;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin-left: 60px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.nav:hover {
+  background-color: #bcbcb7;
+}
+.active {
+  color: black;
+  text-decoration: none;
+  font-family: CB;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin-left: 60px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+  background-color: #bcbcb7;
+}
