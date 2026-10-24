@@ -8,7 +8,6 @@ import {
 import ArchiveHeader from "@/components/archive/header/archive-header";
 import Link from "next/link";
 import classess from "./page.module.css";
-import { Box } from "@mui/material";
 
 export default async function FilteredNewspage({ params }) {
   const { filter } = await params;
@@ -26,9 +25,9 @@ export default async function FilteredNewspage({ params }) {
     links = [];
   }
   let newsContent = (
-    <Box className={classess.newsContent}>
+    <div className={classess.newsContent}>
       No News Found For The Selected Period!
-    </Box>
+    </div>
   );
   if (news && news.length > 0) {
     newsContent = <NewsList news={news} />;

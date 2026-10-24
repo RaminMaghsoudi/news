@@ -8,9 +8,12 @@
   justify-content: center;
   text-align: center;
   margin-left: -10rem;
-  margin-top: -8rem;
+  margin-top: -9rem;
+  background-color: blueviolet;
 }
 .Image {
   border-radius: 15px;
   box-shadow: 0 1rem 1rem rgb(85, 84, 84);
+  width: 35%;
+  height: auto;
 }
