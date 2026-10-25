@@ -14,6 +14,16 @@
 .Image {
   border-radius: 15px;
   box-shadow: 0 1rem 1rem rgb(85, 84, 84);
-  width: 35%;
-  height: auto;
+}
+.modal {
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 10px 0 #181817;
+  border-radius: 15px;
+  box-shadow: 0 1rem 1rem rgb(85, 84, 84);
+}
+.modal h2,
+.modal h1 {
+  margin: 0;
 }

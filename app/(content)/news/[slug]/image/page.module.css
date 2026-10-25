@@ -1,0 +1,7 @@
+.Image {
+  border-radius: 15px;
+  box-shadow: 0 1rem 1rem rgb(85, 84, 84);
+  width: 35%;
+  height: auto;
+  margin-left: 150px;
+}
